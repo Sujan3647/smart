@@ -1,0 +1,140 @@
+
+        
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+}
+.logo h1 {
+    font-size: 20px;
+    color: black;
+    margin: 0;
+}
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    margin: 0 15px;
+}
+ul a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+ul a:hover {
+    color: #ff8c00;
+}
+.menu-toggle {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #f8f8f8;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 200px;
+    }
+    ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+    ul.active {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    
+}
+
+.w3-content {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
+  .w3-display-container {
+    position: relative;
+  }
+  
+  .w3-left, .w3-right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+  }
+  
+  .w3-left {
+    left: 0;
+  }
+  
+  .w3-right {
+    right: 0;
+  }
+  
+  .w3-badge {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .w3-badge.active, .w3-badge:hover {
+    background-color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .w3-left, .w3-right {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .w3-badge {
+      height: 8px;
+      width: 8px;
+    }
+  }
+  
+
+
